@@ -15,11 +15,13 @@
     @apply h-[100dvh] overflow-y-auto ;
   }
   .layout1 {
-    background: radial-gradient(100% 60% at top, transparent 100%, #6400a0 50%) , #fff;
+    background: url('./images/bg.svg') no-repeat bottom center, #fff;
+    background-size: contain
   }
   .layout2 {
     @apply pt-[30%];
-    background: radial-gradient(60% 50% at top, transparent 100%, #6400a0 20%) ;
+    background: url('./images/bg2.svg') no-repeat bottom center, transparent;
+    background-size: contain
   }
   .sliderBg {
     background: url('./images/slider_bg.jpg') top center;
@@ -40,4 +42,5 @@
   .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
       @apply !bg-primary !border-primary border 
   }
+
 }
