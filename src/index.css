@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body, html {
+    @apply h-full w-full
+  }
+  body {
+    @apply font-poppins bg-slate-200;
+  }
+}
+@layer utilities {
+  #root {
+    @apply h-[100dvh] overflow-y-auto ;
+  }
+  .layout1 {
+    background: radial-gradient(100% 60% at top, transparent 100%, #6400a0 50%) , #fff;
+  }
+  .layout2 {
+    @apply pt-[30%];
+    background: radial-gradient(60% 50% at top, transparent 100%, #6400a0 20%) ;
+  }
+  .sliderBg {
+    background: url('./images/slider_bg.jpg') top center;
+    background-size: cover;
+  }
+  .btn {
+    @apply bg-primary text-white px-4 py-2 rounded-md
+  }
+  .form-control {
+    @apply bg-white py-1.5 px-3 rounded-none text-center border-b w-full
+  }
+  .form-group {
+    @apply relative
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    @apply !bg-transparent !border-primary border !opacity-100 w-3 h-3
+  }
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      @apply !bg-primary !border-primary border 
+  }
+}
