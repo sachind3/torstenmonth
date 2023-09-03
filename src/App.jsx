@@ -7,6 +7,7 @@ import Intro from "./pages/Intro";
 import Quiz from "./pages/Quiz";
 import Score from "./pages/Score";
 import Preview from "./pages/Preview";
+import Admin from "./pages/Admin";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="score" element={<Score />} />
         <Route path="preview" element={<Preview />} />
       </Route>
+      <Route path="admin" element={<Admin />} />
       <Route path="*" element={<Navigate to={"/"} />} />
     </Routes>
   );

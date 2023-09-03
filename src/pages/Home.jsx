@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="px-6">
       <h4 className="text-primary text-xl text-center mb-2">
-        Radiologist Details
+        Enter Your Details
       </h4>
       <Formik
         initialValues={{

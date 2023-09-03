@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
+    "@tanstack/match-sorter-utils": "^8.8.4",
+    "@tanstack/react-table": "^8.9.3",
     "axios": "^1.5.0",
     "downloadjs": "^1.4.7",
     "formik": "2.2.9",
